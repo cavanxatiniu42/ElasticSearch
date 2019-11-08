@@ -39,6 +39,7 @@ This index is defined following the created template mentioned aboved
 
 
 4. API defined:
+- Go to browser and type localhost:8005 and using following API
 
 - Search by name:
 GET /search_result_by_name?search_term=
