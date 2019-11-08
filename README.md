@@ -27,7 +27,7 @@ to find the suitable version of elasticsearch
 - There is a function called create_mapping() in crawl_sendo_data.py to define template to new index
 - In this example, I just use three properties of sendo data, they are name, price and image and define their index property and data type
 We can add more properties as many as we want.
-- Create men-wears index by calling function create_men_wears_index() in crawl_sendo_data_py
+- Create men-wears index by calling function create_men_wears_index() in crawl_sendo_data.py
 This index is defined following the created template mentioned aboved
 
 2. Crawl sendo data
