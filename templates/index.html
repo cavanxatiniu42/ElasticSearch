@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Sendo Product</title>
+    <style>
+        body{
+            width: 80%;
+            align-items: center;
+        }
+
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<div class="container">
+    <h1>Demo Search Engine</h1>
+    <hr>
+    <form action=" {{ url_for ('get_search_infomation')}}" method="POST">
+        <label for="name">Search by name or description:</label>
+        <input type="text" class="form-control" id="name" name="name">
+        <label>Search by price range: </label>
+        <div class="form-row">
+            <div class="col-md-9">
+                <div class="form-check-inline ml-2">
+                    <input type="radio" class="form-check-input" name="price" value="lt100"> Less than 100k
+                </div>
+                <div class="form-check-inline ml-2">
+                    <input type="radio" class="form-check-input" name="price" value="gt100&lt200"> 100k ~ 200k
+                </div>
+                <div class="form-check-inline ml-2">
+                    <input type="radio" class="form-check-input" name="price" value="gt200&lt300"> 200k ~ 300k
+                </div>
+                <div class="form-check-inline ml-2">
+                    <input type="radio" class="form-check-input" name="price" value="gt300&lt400"> 300k ~ 400k
+                </div>
+                <div class="form-check-inline ml-2">
+                    <input type="radio" class="form-check-input" name="price" value="gt400&lt500"> 400k ~ 500k
+                </div>
+                <div class="form-check-inline ml-2">
+                    <input type="radio" class="form-check-input" name="price" value="gt500"> Greater than 500k
+                </div>
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary mb-4">Submit</button>
+    </form>
+</div>
+
+</html>
